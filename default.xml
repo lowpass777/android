@@ -24,6 +24,11 @@
            sync-j="4"
            revision="refs/heads/12.1" />
 
+  <remote  name="pixel"
+           fetch="https://github.com/PixelExperience"
+           revision="twelve"
+           review="gerrit.pixelexperience.org" />
+
   <remote  name="crdroid-gitlab"
            fetch="https://gitlab.com/"
            sync-c="true"
@@ -1061,6 +1066,7 @@
 
   <include name="snippets/crdroid.xml" />
   <include name="snippets/lineage.xml" />
+  <include name="snippets/pixel-caf.xml" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 </manifest>
